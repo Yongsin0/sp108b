@@ -8,8 +8,8 @@
 教師 | [陳鍾誠](https://misavo.com/blog/%E9%99%B3%E9%8D%BE%E8%AA%A0)
 學校科系 | [金門大學資訊工程系](https://www.nqu.edu.tw/educsie/index.php)
 課程首頁 | [系統程式](https://misavo.com/blog/%E9%99%B3%E9%8D%BE%E8%AA%A0/%E8%AA%B2%E7%A8%8B/%E7%B3%BB%E7%B5%B1%E7%A8%8B%E5%BC%8F)
-
-## 測試範例
+## compiler-if
+### 測試範例
 ```
 a = 6;
 b = 9;
@@ -17,7 +17,7 @@ b = 9;
 if (a > b)t = a;
 else t = b;
 ```
-## 執行方法
+### 執行方法
 1. make   gcc -std=c99 -O0 lexer.c compiler.c main.c -o compiler
 2. ./compiler test/cond.c
 3. 執行結果:
