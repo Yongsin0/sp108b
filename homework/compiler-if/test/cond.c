@@ -1,10 +1,7 @@
-a = 6;
-b = 9;
+#include <stdio.h>
+int a = 6;
+int b = 9;
+int t;
 
-if (a > b){ //a是最大值
-    t = a;
-}
-
-else{   //b是最大值
-    t = b;
-}
+if (a > b)t = a;
+else t = b;
