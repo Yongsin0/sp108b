@@ -1,7 +1,5 @@
-#include <stdio.h>
-int a = 6;
-int b = 9;
-int t;
+a = 6;
+b = 9;
 
 if (a > b)t = a;
 else t = b;
