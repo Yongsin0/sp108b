@@ -18,7 +18,7 @@ if (a > b)t = a;
 else t = b;
 ```
 ## 執行方法
-1. make
+1. make   gcc -std=c99 -O0 lexer.c compiler.c main.c -o compiler
 2. ./compiler test/cond.c
 3. 執行結果:
 ```
