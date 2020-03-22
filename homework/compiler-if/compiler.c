@@ -92,16 +92,21 @@ void WHILE() {
 
 // IF = if (E) STMT (else STMT)?
 void IF() {
-  
-  skip("if");
+  int ifB = nextLabel();//開始標籤
+  int ifE = nextLabel();//結束標籤
+  skip("if");//忽略if
   skip("(");
-  int e = E();
+  int e = E();//儲存條件式的值
+  emit("if not t%d goto L%d\n", e, ifB);  //標記(傳送門)如果條件式為假，直接做else
   skip(")");
   STMT();
+  emit("goto L%d\n",ifE); //做完if內的事情後，直接結束if-else條件句
+  emit("(L%d)\n", ifB); //else
   if (isNext("else")){
     skip("else");
     STMT();
   }
+  emit("(L%d)\n", ifE); //結束的標記
  
 }
 
