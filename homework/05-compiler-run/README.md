@@ -1,7 +1,23 @@
 # Compiler
-
+#### testing sample:(path->test/homework_t)
 ```
-PS D:\ccc\course\sp\code\c\02-compiler\05-compiler-run> ./compiler test/sum.c -run
+a = 3;
+b = 5;
+if (a > b){
+    t = a;
+}
+else{
+   t = b;
+}
+```
+#### testing method:
+1. After u done programming, type "make" in terminal to compile multiple ".C" files at the same time.
+    This is what ya ganna get-> gcc -std=c99 -O0 lexer.c compiler.c main.c -o compiler
+2. Type "./compiler test/homework_test.c -ir -run" to demo ur code.
+
+#### Result:
+```
+PS D:\國立金門大學資訊工程-課程\鍾誠老師課程\系統程式\110710544系統程式\student\sp108b\homework\05-compiler-run>
 ===================irRun()=======================
 00: t1 = 0 (0)
 01: s = t1 (0)
