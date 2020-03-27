@@ -140,13 +140,13 @@ void WHILE() {
   skip("while");
   skip("(");
   int e = E();
-  irEmitIfNotGoto(e, whileEnd);
+  irEmitIfNotGoto(e, whileEnd);//判斷 所以不能直接走
   // emit("goif T%d L%d\n", whileEnd, e);
   skip(")");
   STMT();
-  irEmitGoto(whileBegin);
+  irEmitGoto(whileBegin);//直接走
   // emit("goto L%d\n", whileBegin);
-  irEmitLabel(whileEnd);
+  irEmitLabel(whileEnd);//看到label 設傳送點
   // emit("(L%d)\n", whileEnd);
 }
 
