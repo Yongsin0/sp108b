@@ -1,0 +1,7 @@
+參考資料:
+Lua教學            http://tw.gitbook.net/lua/lua_environment.html
+
+編譯器-MBA智能百科 https://wiki.mbalib.com/zh-tw/%E7%BC%96%E8%AF%91%E5%99%A8
+Compiler介紹 https://lagunawang.pixnet.net/blog/post/9743288-compiler%e4%bb%8b%e7%b4%b9
+[C 語言] 程式設計教學：在 Windows 上建立 C 語言開發環境https://michaelchen.tech/c-programming/write-c-on-windows/
+你所不知道的 C 語言：編譯器原理和案例分析https://hackmd.io/@sysprog/c-compiler-construction?type=view
